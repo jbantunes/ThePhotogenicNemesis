@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+  </head>
+  <body>
+    <a-scene mindar-image="imageTargetSrc: ./Mind%20Files/bridgetarget.mind" 
+      color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" 
+      vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+
+      <a-assets>
+        <img id="bridge" src="./Assets/bridge.png">
+        <img id="digitalpressures" src="./Assets/digitalpressures.png">
+        <img id="justmycart" src="./Assets/justmycart.png">
+        <img id="post2020" src="./Assets/post2020.png">
+        <img id="sinched" src="./Assets/sinched.png">
+        <img id="undesired" src="./Assets/undesired.png">
+        <img id="textbottom" src="./Assets/textbottom.png">
+      </a-assets>
+
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <!-- Image Triggers (Corrected Paths with Footer) -->
+      <a-entity mindar-image-target="targetIndex: 1">
+        <a-image src="#bridge" position="0 0 0" width="1.5" height="1"></a-image>
+        <a-image src="#textbottom" position="0 -0.8 0" width="1.5" height="0.5"></a-image>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 2">
+        <a-image src="#digitalpressures" position="0 0 0" width="1.5" height="1"></a-image>
+        <a-image src="#textbottom" position="0 -0.8 0" width="1.5" height="0.5"></a-image>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 3">
+        <a-image src="#justmycart" position="0 0 0" width="1.5" height="1"></a-image>
+        <a-image src="#textbottom" position="0 -0.8 0" width="1.5" height="0.5"></a-image>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 4">
+        <a-image src="#post2020" position="0 0 0" width="1.5" height="1"></a-image>
+        <a-image src="#textbottom" position="0 -0.8 0" width="1.5" height="0.5"></a-image>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 5">
+        <a-image src="#sinched" position="0 0 0" width="1.5" height="1"></a-image>
+        <a-image src="#textbottom" position="0 -0.8 0" width="1.5" height="0.5"></a-image>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 6">
+        <a-image src="#undesired" position="0 0 0" width="1.5" height="1"></a-image>
+        <a-image src="#textbottom" position="0 -0.8 0" width="1.5" height="0.5"></a-image>
+      </a-entity>
+
+    </a-scene>
+  </body>
+</html>
+
+
+
